@@ -1,0 +1,22 @@
+
+/* Simple modern light theme */
+*{box-sizing:border-box}
+body{font-family:Arial, Helvetica, sans-serif;background:#f2f6fb;margin:0;color:#222}
+.container{max-width:1000px;margin:30px auto;padding:0 15px}
+.topbar{background:#ffffff;border-bottom:1px solid #e6eef9;padding:12px 0;box-shadow:0 1px 4px rgba(20,40,80,0.03)}
+.topbar .container{display:flex;align-items:center;justify-content:space-between}
+.topbar h1{margin:0;font-size:20px;color:#0b557a}
+.topbar .right{display:flex;gap:10px;align-items:center}
+.btn{background:#0b74a8;color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none;display:inline-block}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-top:20px}
+.card{background:#fff;padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(25,50,80,0.06);text-align:center}
+.card img{max-width:100%;height:150px;object-fit:cover;border-radius:8px}
+.card h3{margin:10px 0 6px}
+.muted{color:#56687a;font-size:14px}
+.page-center{display:flex;align-items:center;justify-content:center;height:80vh}
+.card.small{width:360px;padding:24px;text-align:center}
+input[type=email],input[type=password],input[type=text],select{width:100%;padding:10px;margin:8px 0;border:1px solid #d9e6f2;border-radius:8px}
+button{background:#0b74a8;color:#fff;border:none;padding:10px 14px;border-radius:8px;cursor:pointer}
+.preview-card img{max-width:100%;border-radius:8px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+@media (max-width:700px){.two-col{grid-template-columns:1fr}.container{padding:15px}}
