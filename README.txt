@@ -1,32 +1,44 @@
-Car_Customization - Setup Guide
+🚗 Car Customization System
+A Web-Based Vehicle Configuration & Quotation Platform
+OVERVIEW 📖📖
+The **Car Customization System** is a dynamic web application developed using **PHP and MySQL**. It allows users to interactively customize a vehicle by selecting various configurations (Color, Engine, Interior, Variant).
 
-1. Requirements
-   - XAMPP installed (Apache + MySQL)
-   - Place the folder 'Car_Customization' into C:\xampp\htdocs\
+The system calculates the total price in real-time and provides a detailed quotation. A unique feature of this project is its ability to **email the final quotation** directly to the user.
+SPECIFICATIONS
+🔐 User Authentication:** Secure Login and Registration system to manage user sessions.
+🎨 Live Customization:** Users can choose from different:
+    Colors** (e.g., Red, Blue, Black)
+    Engine Types** (e.g., V6, V8, Hybrid)
+    Interiors** (e.g., Leather, Fabric)
+    Variants** (e.g., Standard, Premium)
+💰 Dynamic Pricing:** The total cost updates automatically based on selected options.
+📧 Email Integration:** Generates a summary and sends a quotation email to the client using PHP Mailer / SMTP.
+📱 Responsive Design:** Clean and user-friendly interface.
 
-2. Import Database
-   - Open http://localhost/phpmyadmin
-   - Click Import and choose the file car_customization.sql from the project root
-   - Click Go to import database and sample data
 
-3. Run Project
-   - Start Apache and MySQL in XAMPP Control Panel
-   - Open in browser: http://localhost/Car_Customization/
-   - Use sample login: test@gmail.com / 1234
-   - Or register a new user
+🛠️ Technologies Used
+Frontend: HTML5, CSS3, JavaScript
+Backend: PHP (Native)
+Database: MySQL (Relational Database)
+Server: Apache (via XAMPP/WAMP)
 
-4. Notes about images
-   - The project contains placeholder images inside /images/.
-   - If you want real high-resolution photos, replace the image files with your own real car photos
-     but keep filenames same: fortuner_white.jpg, fortuner_black.jpg, hector_red.jpg, hector_silver.jpg, harrier_blue.jpg, harrier_grey.jpg
+🚀 How to Run This Project
+Since this project uses PHP and MySQL, it requires a local server.
+1.  Download & Install XAMPP.
+2.  Clone the Repository:
+    Download this project and extract it to `C:\xampp\htdocs\car_customization.
+3.  Setup the Database:
+    Open **phpMyAdmin** (`http://localhost/phpmyadmin`).
+    Create a new database named `car_customization`.
+    Import the `database.sql` file provided in this folder.
+4.  Configure Email (Optional):
+   Update `thankyou.php` or `sendmail.ini` with your SMTP credentials to enable email sending.
+5.  Run the Project:
+    Open your browser and go to `http://localhost/car_customization`.
 
-5. How it works (brief)
-   - index.php: login page
-   - register.php: create account
-   - home.php: shows car cards from DB
-   - customize.php: choose options and preview image
-   - summary.php: shows final quotation and asks for email
-   - thankyou.php: displays success message (no real email sent)
-   - db.php: database connection
+👤 Author
+Mayur Parmar
+Full Stack Developer
+Mayur Parmar | Full Stack Developer
 
-Project developed by Mayur.
+*Created for WebTechnolgy Subject (Semester -5 ) Nov-2025 / / Academic Submission.*
